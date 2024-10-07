@@ -8,6 +8,160 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
 	margin: 0;
 }
+
+:root {
+	--border-size: 1px;
+	--border-color: #E6E8EB;
+	--solid-border: var(--border-size) solid var(--border-color);
+
+	--player-height: 5rem;
+
+	--queue-width: 20.5rem;
+	--queue-background: #F3F4F6;
+}
+
+#music-player {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#playlist-container {
+	padding: 5.5rem;
+}
+
+#playlist-info {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+#playlist-info > img {
+	height: 250px;
+}
+
+#playlist-info-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 0.5rem;
+}
+
+#playlist-info-header > h1 {
+	font-size: 3rem;
+	line-height: 1.25;
+}
+
+#playlist-info-details {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+#playlist {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin-top: 3rem;
+	padding-left: 1rem;
+	gap: 2rem;
+}
+
+.song-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.song-info span {
+	font-weight: bold;
+}
+
+
+
+#player {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: var(--player-height);
+	border-top: var(--solid-border);
+	background-color: white;
+}
+
+#player > div {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: row;
+}
+
+#player-playing {
+	align-items: center;
+	height: 100%;
+	gap: 1rem;
+}
+
+#player-playing .song-info span {
+	font-size: 0.875rem;
+}
+
+#player-playing > img {
+	height: 100%;
+}
+
+#player-controls {
+	justify-content: center;
+	gap: 2rem;
+}
+
+#player-controls > img {
+	height: 2.5rem;
+}
+
+#player-brand {
+	justify-content: flex-end;
+	font-size: 0.75rem;
+}
+
+#player-brand > div {
+	display: flex;
+	flex-direction: column;
+	padding-right: 1rem;
+}
+
+#player-brand img {
+	height: 2rem;
+}
+
+#queue {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: var(--queue-width);
+	bottom: var(--player-height);
+	background-color: var(--queue-background);
+	border-left: var(--solid-border);
+}
+
+#queue > p {
+	position: absolute;
+	padding: 2rem;
+}
+
+#queue > span {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	color: #9CA3AF;
+}
+

@@ -11,30 +11,82 @@
 		<link rel="stylesheet" href="/css/style.css" />
 		<title>Hits of the moment | Music player</title>
 	</head>
-	<body>
-		<main>
+	<body id="music-player">
+		<main id="playlist-container">
 			<section id="playlist-info">
 				<img src="/images/2098157264.jpeg" />
-				Playlist Hits of the moment By Fábio - Deezer Pop Editor 2016 · 60 songs
-				· 162 minutes
+				<div id="playlist-info-header">
+					<span>Playlist</span>
+					<h1>Hits of the moment</h1>
+					<div id="playlist-info-details">
+						<p>By Fábio - Deezer Pop Editor</p>
+						<p>2016 · 60 songs · 162 minutes</p>
+					</div>
+				</div>
 			</section>
-			Stay The Kid Laroi INDUSTRY BABY Lil Nas X Woman Doja Cat Bad Habits Ed
-			Sheeran Way 2 Sexy Drake Pepas Farruko Take My Breath The Weeknd Happier
-			Than Ever Billie Eilish
+
+			<ul id="playlist">
+				<li class="song-info">
+					<span>Stay</span>
+					<p>The Kid Laroi</p>
+				</li>
+				<li class="song-info">
+					<span>INDUSTRY BABY</span>
+					<p>Lil Nas X</p>
+				</li>
+				<li class="song-info">
+					<span>Woman</span>
+					<p>Doja Cat</p>
+				</li>
+				<li class="song-info">
+					<span>Bad Habits</span>
+					<p>Ed Sheeran</p>
+				</li>
+				<li class="song-info">
+					<span>Way 2 Sexy</span>
+					<p>Drake</p>
+				</li>
+				<li class="song-info">
+					<span>Pepas</span>
+					<p>Farruko</p>
+				</li>
+				<li class="song-info">
+					<span>Take My Breath</span>
+					<p>The Weeknd</p>
+				</li>
+				<li class="song-info">
+					<span>Happier Than Ever</span>
+					<p>Billie Eilish</p>
+				</li>
+			</ul>
 		</main>
 
 		<aside id="player">
-			<img src="/images/242430582.jpeg" alt="Stay" />
-			STAY The Kid Laroi
+			<div id="player-playing">
+				<img src="/images/242430582.jpeg" alt="Stay" />
+				<div class="song-info">
+					<span>STAY</span>
+					<p>The Kid Laroi</p>
+				</div>
+			</div>
 
-			<img src="/icons/skip_previous.svg" alt="Skip Previous" />
-			<img src="/icons/pause.svg" alt="Pause" />
-			<img src="/icons/skip_next.svg" alt="Skip Next" />
+			<div id="player-controls">
+				<img src="/icons/skip_previous.svg" alt="Skip Previous" />
+				<img src="/icons/pause.svg" alt="Pause" />
+				<img src="/icons/skip_next.svg" alt="Skip Next" />
+			</div>
 
-			Powered by
-			<img src="/images/deezer-logo.svg" alt="Deezer logo" />
+			<div id="player-brand">
+				<div>
+					<span>Powered by</span>
+					<img src="/images/deezer-logo.svg" alt="Deezer logo" />
+				</div>
+			</div>
 		</aside>
 
-		<aside id="queue">Play next · 0 tracks This queue is empty</aside>
+		<aside id="queue">
+			<p>Play next · 0 tracks</p>
+			<span>This queue is empty</span>
+		</aside>
 	</body>
 </html>
